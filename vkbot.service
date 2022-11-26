@@ -1,0 +1,13 @@
+[Unit]
+Description=vkbot
+After=syslog.target
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/saydullayevdamir03/vkbot/
+ExecStart=/usr/bin/python3.9 /home/saydullayevdamir03/vkbot/main.py
+
+
+[Install]
+WantedBy=multi-user.target
